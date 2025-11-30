@@ -14,6 +14,6 @@ Always include the following information for each solution or option:
 
 - The pros/advantages if I do this
 - The cons/disadvantages if I do this
-- The consequences of NOT doing this
+- The consequences of NOT doing this (both good and bad)
 - The assumptions you did
 
