@@ -14,30 +14,48 @@ These prompts turn your LLM into a thinking partner that:
 ### Core Framework (Platform-Agnostic)
 
 **`llm-antifragile.md`** - Problem-solving framework
-- Three-tier solution approach (Antifragile, Robust and Fragile)
-- Explicit assumption tracking
+- Prioritizes understanding root causes over quick fixes
+- Three-tier solution approach (Antifragile → Robust → Fragile)
+- Explicit assumption tracking with "I'm assuming X because Y" format
 - Risk analysis for each option (pros, cons, consequences of inaction)
 
 **`llm-roleplay.md`** - Deliberate practice system
 - Roleplay mode for TPMs (CEO scenarios)
-- Pause/resume controls for reflection
-- Post-session analysis (what worked, what didn't, next steps)
+- Pause/resume controls: `[ROLEPLAY ON/OFF/PAUSE/RESUME]`
+- Post-session analysis (what worked, what could improve, next steps)
 
-**`llm-science-reviewer-paper.md`** - Technical analysis protocol
-- Accuracy, gaps, and error detection for technical papers
-- Terminology consistency enforcement
+**`llm-science-reviewer-paper.md`** - Technical paper analysis protocol
+- Checks for accuracy, gaps, and outright errors
+- Enforces terminology consistency with source material
 - Explicit assumption and uncertainty flagging
+
+**`llm-rate-points-argument.md`** - Argument evaluation prompt
+- Rates claims on three dimensions: Accuracy, Verifiability, Impact (1-5 scale)
+- Requires explicit explanation of ratings
+- Forces clear statement of assumptions
+
+**`llm-drop-guard.md`** - Exploratory conversation prompt
+- Creates space for open-ended, non-performative LLM interaction
+- Grants permission for uncertainty, slowness, and authentic responses
+- Useful for philosophical or creative exploration
 
 ### Reflection System
 
 These extract repeatable patterns from your problem-solving:
 
-**`claude-reflection-genius.md`** (Claude-specific)
+**`claude/claude-reflection-genius.md`** (Claude-specific)
 - **Single conversation:** `"reflect on my genius"` - Analyze what just worked and how to scale it
 - **Historical analysis:** `"reflect on ALL my genius [timeframe]"` - Find meta-patterns across multiple conversations
 
-**`chatgpt-reflection-genius.md`** (ChatGPT-specific)
-- Same reflection commands, adapted for ChatGPT's interaction model (size constraints)
+**`chatgpt/chatgpt-reflection-genius.md`** (ChatGPT-specific)
+- Same reflection commands, adapted for ChatGPT's interaction model (more concise format)
+
+### Drafts
+
+**`drafts/stop-over-thinking-via-antifragile.md`** - Personal guardrail prompt (WIP)
+- Calls out tendencies toward over-engineering, avoidance via research, and scope creep
+- Applies "5 Checks of Antifragile-Progress Framework" to new ideas
+- Recommends: lean test, simplify, pivot, seed, or kill
 
 ## How to Use
 
